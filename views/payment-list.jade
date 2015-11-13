@@ -1,0 +1,15 @@
+extends layout
+block content
+    h1=title
+    div=query
+    table.table
+        tbody
+            each item, i in payments
+                tr
+                   td=item.SubscriberAccount
+                   td=item.PackNum
+                   td=item.RN
+                   td=item.PackNum
+                    td=item.Status_ID
+                   td=item.DT
+                   td=item.ProcessDT
