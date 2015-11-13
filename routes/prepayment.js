@@ -20,7 +20,7 @@ for (var key in dbConfig) {
                 }
                 res.render('payment-list', {
                     title: 'payment list',
-                    query: factory.payment.query(),
+                    query: factory.prepayment.query(),
                     payments: rows
                 });
             });/**/

@@ -28,7 +28,7 @@ var PaymentNative = function(config) {
     payment.fields('UID, SubscriberAccount, Query_ID, RN, PackNum, PaySum, Status_ID, DT, ProcessDT, Description');
 
     var prepayment = new SqlQuery(config, 'prepaymentepay');
-    payment.fields('pay_Id, DocNum, DocDate, PaySumm, OperDate');
+    prepayment.fields('pay_Id, DocNum, DocDate, PaySumm, OperDate');
     return {
         payment: payment,
         prepayment: prepayment
