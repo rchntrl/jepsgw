@@ -27,11 +27,7 @@ var Query = function(config, tableName) {
             table = name;
         },
         fields: function(list) {
-            if (typeof list == 'object') {
-                fields = list.join(', ');
-            } else if (typeof list == 'string') {
-                fields = list;
-            }
+            fields = list;
         },
         result: function(callback) {
             connection.query(query(), function(err, rows) {
